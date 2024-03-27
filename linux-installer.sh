@@ -4,7 +4,7 @@
 sudo apt update
 
 # Install desired packages
-sudo apt install -y apache2 mariadb-server mariadb-client php mosquitto build-essential git curl
+sudo apt install -y apache2 mariadb-server mariadb-client php mosquitto build-essential git curl jq
 
 # Install wget
 wget https://dot.net/v1/dotnet-install.sh -O /home/kws/Downloads/dotnet-install.sh
