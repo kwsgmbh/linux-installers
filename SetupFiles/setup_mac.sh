@@ -38,3 +38,4 @@ sudo nmcli con mod spe0 ethernet.cloned-mac-address "$modified_product3"
 sudo nmcli connection up eth1
 sudo nmcli connection up spe0
 sudo nmcli connection up eth0
+
