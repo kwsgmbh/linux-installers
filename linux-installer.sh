@@ -1,10 +1,13 @@
 #!/bin/bash
 
+# Update packe for armhf
+sudo dpkg --add-architecture armhf
+
 # Update package lists
 sudo apt update
 
 # Install desired packages
-sudo apt install -y apache2 mariadb-server mariadb-client php mosquitto build-essential git curl jq
+sudo apt install -y apache2 mariadb-server mariadb-client php mosquitto build-essential git curl jq cmake libraspberrypi-dev raspberrypi-kernel-headers libc6:armhf  libstdc++6:armhf
 
 # Install wget
 wget https://dot.net/v1/dotnet-install.sh -O /home/kws/Downloads/dotnet-install.sh
