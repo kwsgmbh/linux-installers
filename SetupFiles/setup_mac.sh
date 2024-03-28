@@ -33,10 +33,8 @@ sudo nmcli con mod eth1 ethernet.cloned-mac-address "$modified_product2"
 
 sudo nmcli connection modify 'Wired connection 3' connection.id spe0
 sudo nmcli connection modify spe0 ifname eth2
-sudo nmcli con mod eth0 ethernet.cloned-mac-address "$modified_product3"
+sudo nmcli con mod spe0 ethernet.cloned-mac-address "$modified_product3"
 
-sudo nmcli connection up eth0
 sudo nmcli connection up eth1
 sudo nmcli connection up spe0
-
-
+sudo nmcli connection up eth0
