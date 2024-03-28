@@ -1,0 +1,11 @@
+[Unit]
+Description=TouchScreen load Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/sbin/insmod /lib/modules/6.6.21-v8+/kernel/drivers/input/touchscreen/hynitron_cst918.ko.xz TSP_INT_GPIO=517 I2C_BUS_NUM=24
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -11,3 +11,6 @@ wget https://dot.net/v1/dotnet-install.sh -O /home/kws/Downloads/dotnet-install.
 chmod +x /home/kws/Downloads/dotnet-install.sh
 /home/kws/Downloads/dotnet-install.sh --version latest --runtime aspnetcore
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+sudo cp ConfigFiles/brbase_mosquitto.conf /etc/mosquitto/conf.d/
+sudo cp ConfigFiles/TouchScreen.service /etc/systemd/system/
