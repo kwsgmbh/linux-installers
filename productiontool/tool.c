@@ -1,3 +1,15 @@
+/*****************************************************************
+ * Project BridgEth-Base Productiontool
+ * (c) copyright 2024
+ * Company KWS Computersysteme Gmbh
+ * All rights reserved
+ *****************************************************************/
+/**
+ * @file tool.c
+  * @author Frank Bintakies
+ * A interface to show the EEPROM content.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -124,7 +136,6 @@ int main() {
         	printf("%s: %s\n", json.key[i], json.value[i]);
 	}
     }
-
 
     return 0;
 }
