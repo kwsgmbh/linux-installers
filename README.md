@@ -13,7 +13,7 @@ cd linux-installers
 ```
 2. Install the packages
 ```
-./inux-installer.sh
+./linux-installer.sh
 ```   
 
 ### Pi Image
