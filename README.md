@@ -6,9 +6,15 @@ Both of the following commands use sudo (root) access to install BridgEth-Base s
 
 The command line for installing on a Debian based OS is:
 
+1. clone the code
 ```
-bash <(...)
+git clone https://github.com/kwsgmbh/linux-installers.git
+cd linux-installers
 ```
+2. Install the packages
+```
+./inux-installer.sh
+```   
 
 ### Pi Image
 The piImage directory contains an image file for the raspi imager.
