@@ -10,8 +10,7 @@ sudo apt update
 sudo apt install -y apache2 mariadb-server mariadb-client php mosquitto build-essential git curl jq cmake libraspberrypi-dev raspberrypi-kernel-headers libc6:armhf  libstdc++6:armhf
 
 # Install wget
-wget https://dot.net/v1/dotnet-install.sh -O /home/kws/Downloads/dotnet-install.sh
-chmod +x /home/kws/Downloads/dotnet-install.sh
+wget -O - https://raw.githubusercontent.com/pjgpetecodes/dotnet8pi/main/install.sh | sudo bash
 /home/kws/Downloads/dotnet-install.sh --version latest --runtime aspnetcore
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
